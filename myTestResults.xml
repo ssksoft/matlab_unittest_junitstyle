@@ -1,53 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <testsuites>
-   <testsuite errors="0" failures="1" name="ExampleTest" skipped="1" tests="3" time="2.5409">
-      <testcase classname="ExampleTest" name="testOne" time="2.3214">
-         <failure type="VerificationFailure">================================================================================
-ExampleTest/testOne で検証に失敗しました。
-    ----------
-    テスト診断:
-    ----------
-    Testing 5==4
-    ----------------
-    フレームワーク診断:
-    ----------------
-    verifyEqual の条件が満たされませんでした。
-    --&gt; "isequaln" では数値は等価ではありません。
-    --&gt; 失敗テーブル:
-            Actual    Expected    Error    RelativeError
-            ______    ________    _____    _____________
-        
-              5          4          1          0.25     
-    
-    実際の値:
-         5
-    必要な値:
-         4
-    -----------
-    スタック情報:
-    -----------
-    C:\Users\sasat\Documents\MATLAB\unittest_junitstyle\ExampleTest.m (ExampleTest.testOne) (6 行目) 内
-================================================================================</failure>
-      </testcase>
-      <testcase classname="ExampleTest" name="testTwo" time="0.0076317"/>
-      <testcase classname="ExampleTest" name="testThree" time="0.21187">
-         <skipped>================================================================================
-ExampleTest/testThree で仮定が満たされませんでした。テストの残りの部分にフィルターが適用されました。
-    ----------------
-    フレームワーク診断:
-    ----------------
-    assumeTrue の条件が満たされませんでした。
-    --&gt; 値は "true" として評価されなければなりません。
-    
-    実際の値:
-      logical
-    
-       0
-    -----------
-    スタック情報:
-    -----------
-    C:\Users\sasat\Documents\MATLAB\unittest_junitstyle\ExampleTest.m (ExampleTest.testThree) (14 行目) 内
-================================================================================</skipped>
-      </testcase>
+   <testsuite errors="0" failures="0" name="ExampleTest" skipped="0" tests="3" time="0.64496">
+      <testcase classname="ExampleTest" name="testOne" time="0.63318"/>
+      <testcase classname="ExampleTest" name="testTwo" time="0.0093797"/>
+      <testcase classname="ExampleTest" name="testThree" time="0.0024007"/>
    </testsuite>
 </testsuites>

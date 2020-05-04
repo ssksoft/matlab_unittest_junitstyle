@@ -5,7 +5,7 @@ classdef ExampleTest < matlab.unittest.TestCase
     methods (Test)
 
         function testOne(testCase)
-            testCase.verifyEqual(5, 4,  'Testing 5==4')
+            testCase.verifyEqual(6, 6,  'Testing 6==6')
         end
 
         function testTwo(testCase)
@@ -13,7 +13,7 @@ classdef ExampleTest < matlab.unittest.TestCase
         end
 
         function testThree(testCase)
-            testCase.assumeTrue(false)
+            testCase.assumeTrue(true)
         end
 
     end
