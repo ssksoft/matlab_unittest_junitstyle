@@ -5,7 +5,7 @@ classdef ExampleTest < matlab.unittest.TestCase
     methods (Test)
 
         function testOne(testCase)
-            testCase.verifyEqual(6, 5,  'Testing 6==5')
+            testCase.verifyEqual(6, 6,  'Testing 6==6')
         end
 
         function testTwo(testCase)
