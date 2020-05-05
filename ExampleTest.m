@@ -1,11 +1,12 @@
-%% QlFhttps://jp.mathworks.com/help/matlab/ref/matlab.unittest.plugins.xmlplugin-class.html
+%% å‚è??¼šhttps://jp.mathworks.com/help/matlab/ref/matlab.unittest.plugins.xmlplugin-class.html
 
 classdef ExampleTest < matlab.unittest.TestCase
 
     methods (Test)
 
         function testOne(testCase)
-            testCase.verifyEqual(6, 5,  'Testing 6==5')
+            testCase.verifyEqual(6, 6,  'Testing 6==5')
+            
         end
 
         function testTwo(testCase)

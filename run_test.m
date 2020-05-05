@@ -10,7 +10,6 @@ p = XMLPlugin.producingJUnitFormat(xmlFile);
 
 runner.addPlugin(p)
 results = runner.run(suite);
-% table(results)
 
 results_table = table(results);
 num_failure = sum(results_table.Failed);
