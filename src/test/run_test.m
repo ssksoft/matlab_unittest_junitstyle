@@ -5,7 +5,8 @@ import matlab.unittest.plugins.XMLPlugin
 suite = TestSuite.fromClass(?ExampleTest);
 runner = TestRunner.withNoPlugins;
 
-xmlFile =  'myTestResults.xml';
+mkdir("..\..\target");
+xmlFile = '..\..\target\myTestResults.xml';
 p = XMLPlugin.producingJUnitFormat(xmlFile);
 
 runner.addPlugin(p)
