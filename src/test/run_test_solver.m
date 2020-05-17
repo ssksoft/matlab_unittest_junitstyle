@@ -1,8 +1,16 @@
-import matlab.unittest.TestSuite
 import matlab.unittest.TestRunner
 import matlab.unittest.plugins.CodeCoveragePlugin
+import matlab.unittest.plugins.codecoverage.CoberturaFormat
 
-suite = TestSuite.fromClass(?SolverTest);
+testFile = 'ForFileSolverTest.m'
+suite = testsuite(testFile);
 runner = TestRunner.withTextOutput;
-runner.addPlugin(CodeCoveragePlugin.forFolder(pwd))
+
+sourceCodeFile = '..\main\quadraticSolver.m'
+reportFile = 'CoverageResults.xml';
+reportFormat = CoberturaFormat(reportFile);
+plugin = CodeCoveragePlugin.forFile(sourceCodeFile, 'Producing', reportFormat);
+runner.addPlugin(plugin)
 result = runner.run(suite);
+
+disp(fileread(reportFile))
