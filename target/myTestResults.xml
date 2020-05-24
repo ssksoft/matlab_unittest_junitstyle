@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <testsuites>
    <testsuite errors="0" failures="0" name="ExampleTest" skipped="0" tests="3"
-              time="0.029746">
-      <testcase classname="ExampleTest" name="testOne" time="0.015658"/>
-      <testcase classname="ExampleTest" name="testTwo" time="0.011256"/>
-      <testcase classname="ExampleTest" name="testThree" time="0.002831"/>
+              time="0.035485">
+      <testcase classname="ExampleTest" name="testOne" time="0.022552"/>
+      <testcase classname="ExampleTest" name="testTwo" time="0.0087438"/>
+      <testcase classname="ExampleTest" name="testThree" time="0.004189"/>
    </testsuite>
 </testsuites>

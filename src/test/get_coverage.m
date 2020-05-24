@@ -7,7 +7,7 @@ suite = testsuite(testFile);
 runner = TestRunner.withTextOutput;
 
 sourceCodeFile = '..\main\quadraticSolver.m'
-reportFile = 'CoverageResults.xml';
+reportFile = '..\..\target\CoverageResults.xml';
 reportFormat = CoberturaFormat(reportFile);
 plugin = CodeCoveragePlugin.forFile(sourceCodeFile, 'Producing', reportFormat);
 runner.addPlugin(plugin)
